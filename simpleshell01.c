@@ -18,7 +18,6 @@ int main(void)
 
 		if (getline(&command, &len, stdin) == -1)
 		{
-			free(command);
 			break;
 		}
 		command[strcspn(command, "\n")] = '\0';
@@ -42,7 +41,5 @@ int main(void)
 			waitpid(pid, &status, 0);
 		}
 	}
-
-	free(command);
 	return (0);
 }
