@@ -8,4 +8,5 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 int main(void);
+int excommand(void)
 #endif
