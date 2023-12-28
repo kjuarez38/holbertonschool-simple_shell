@@ -39,6 +39,7 @@ int main(void)
 		else
 		{
 			waitpid(pid, &status, 0);
+			free(command);
 		}
 	}
 	return (0);
