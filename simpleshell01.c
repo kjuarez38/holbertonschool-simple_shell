@@ -40,7 +40,6 @@ int main(void)
 		else
 		{
 			waitpid(pid, &status, 0);
-			printf("\n");
 		}
 	}
 
